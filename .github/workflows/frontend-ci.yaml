@@ -17,8 +17,11 @@ on:
           with:
             node-version: 22
         - name: Install dependencies
+          working-directory: weather-forecast
           run: npm install
         - name: Run lint
+          working-directory: weather-forecast
           run: npm run lint
         - name: Run tests
+          working-directory: weather-forecast
           run: npm test
