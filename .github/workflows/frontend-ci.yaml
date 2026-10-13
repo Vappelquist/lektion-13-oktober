@@ -21,6 +21,10 @@ jobs:
       - name: Run lint
         working-directory: weather-frontend
         run: npm run lint
+      - name: Build project
+        working-directory: weather-frontend
+        run: npm run build
+
       # - name: Run tests
       #   working-directory: weather-frontend
       #   run: npm test
