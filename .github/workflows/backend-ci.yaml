@@ -15,5 +15,6 @@ jobs:
         with:
           dotnet-version: 10.0.x
       - name: run tests
+        working-directory: WeatherAPI
         run: dotnet test
         
